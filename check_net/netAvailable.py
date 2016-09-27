@@ -6,7 +6,7 @@ for p in proxyList:
 	try:
 		print commands.getstatusoutput("curl --proxy http://n091130:prbbshr7@"+p+":3128/ --head http://www.google.co.in")[1]
 	except:print "Not Working"
-	print "-"*80
+	
 	
 
 
