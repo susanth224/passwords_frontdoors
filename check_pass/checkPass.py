@@ -10,6 +10,7 @@ b=data.read()
 passwds = b.split("\n")
 del passwds[-1]
 c=0
+
 for i in passwds:
     proxy="http://"+i+"@10.1.1.44:3128/"
     a=commands.getstatusoutput("curl --proxy "+proxy+" --head http://www.google.co.in")
